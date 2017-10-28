@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
+// Project
+
+Route::get('/projects', 'ProjectController@index');
+Route::get('/milestones', 'MilestoneController@index');
+Route::get('/test-cases', 'TestCaseController@index');
+Route::get('/test-plans', 'TestPlanController@index');
